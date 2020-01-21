@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap');
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    background: url(img/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+@-webkit-keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  @keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  @-webkit-keyframes rubberBand {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+h1 {
+    cursor: context-menu;
+    text-shadow: 4px 5px 8px #4400ff;
+    font-size: 3em;
+    color: #fef2de;
+    letter-spacing: 0.15em;
+    text-align: center;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+.buffer {
+    height: 18rem;
+}
+
+hr {
+    max-width: 70px;
+    border-color: blueviolet;
+    border-width: 3px;
+}
+
+.btn {
+    color: #fef2de;
+    text-transform: uppercase;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(104,10,144,1) 100%);
+    border: 1px solid #4400ff;  
+    box-shadow: 1px 2px 5px 1px #4400ff;
+    transition: all 1s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    border: 1px solid #4400ff;  
+    box-shadow: 3px 5px 12px 3px #4400ff;
+}
